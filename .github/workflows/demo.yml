@@ -30,7 +30,7 @@ jobs:
         with:
           name: artifcats
           path: | # we use pipe symbol when we have to do multiple instructions.
-            artifcat
+            artifact
             package.json
   deploy:
     needs: build
