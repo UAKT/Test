@@ -29,13 +29,13 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: artifcats folder
-          path: artifacts
+          path: artifact
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Get build Artifacts
-        use: actions/dowanlod-artifact@v3
+        use: actions/download-artifact@v3
         with:
           name: artifact
       - name: output contents
