@@ -28,8 +28,8 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: artifcats folder
-          path: artifact
+          name: artifacts folder
+          path: C:\Users\WDAGUtilityAccount\Desktop\01 Starting Project\artifact
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -37,7 +37,7 @@ jobs:
       - name: Get build Artifacts
         uses: actions/download-artifact@v3
         with:
-          name: artifact
+          name: artifacts folder
       - name: output contents
         run: ls 
       - name: Deploy
