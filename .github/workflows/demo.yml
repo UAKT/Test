@@ -28,15 +28,14 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: artifcats
-          path: | # we use pipe symbol when we have to do multiple instructions.
-            artifact
-            package.json
+          name: artifcats folder
+          path: artifacts
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Get build Artifacts
+        use: actions/dowanlod-artifact@v3
         with:
           name: artifact
       - name: output contents
