@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: artifacts folder
-          path: C:\Users\WDAGUtilityAccount\Desktop\01 Starting Project\artifact
+          path: artifact
   deploy:
     needs: build
     runs-on: ubuntu-latest
