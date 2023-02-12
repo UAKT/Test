@@ -30,7 +30,7 @@ jobs:
         with:
           name: artifcats
           path: | # we use pipe symbol when we have to do multiple instructions.
-            artifact
+            C:\Users\WDAGUtilityAccount\Desktop\01 Starting Project\artifact
             package.json
   deploy:
     needs: build
